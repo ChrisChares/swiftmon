@@ -6,7 +6,7 @@ Swiftmon will watch your project directory and automatically rebuild and restart
 1. `git clone git@github.com:ChrisChares/swiftmon.git && cd swiftmon`
 2. `swift build`
 3. Symlink swiftmon to `/usr/local/bin` with `ln -s $(pwd)/.build/debug/Swiftmon /usr/local/bin/swiftmon`
-4. Symlink swift to `/usr/local/bin` with `ln -s $(which swift) /usr/local/bin/swift`
+4. Symlink swift to `/usr/local/bin` with `ln -s $(which swift) /usr/local/bin/swift` [Why?](https://github.com/ChrisChares/swiftmon/issues/1)
 5. Create a new project in a new directory, i.e. `mkdir ~/SampleProject && cd ~/SampleProject && swift package init --type executable`
 6. Start watching it with `swiftmon`
 7. ???
