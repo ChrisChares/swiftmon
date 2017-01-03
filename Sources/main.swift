@@ -17,16 +17,12 @@ func shell(_ launchpath: String, _ args: [String]?) -> Int32 {
     
     task.launch()
     task.waitUntilExit()
-//    
-//    let pipe = Pipe()
-//    task.standardOutput = pipe
-//    
+
     return task.terminationStatus
 }
 
 func relaunch() {
-    print("Files changed, restarting")
-    shell("/bin/bash", ["-l", "$(which swift)", "build"])
+    shell("/usr/local/bin/swift", ["build"])
     shell("./.build/debug/\(packageName)", nil)
 }
 
