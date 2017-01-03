@@ -17,7 +17,7 @@ Swiftmon will watch your project directory and automatically rebuild and restart
 These would all make excellent pull requests ;)
 
 + Supports default directory structure by watching the ./Sources directory and optionally ./main.swift.  This is the structure created by `swift package init --type executable`
-+ Does not currently run tests when those change
++ Does not currently run tests when they change
 + Requires some awkward symlinking (no `npm install -g` with spm yet)
 + Unable to choose files to ignore
 + (Probably) Mac OS only.  Haven't tested Linux yet.
